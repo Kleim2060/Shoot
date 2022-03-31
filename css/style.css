@@ -1,0 +1,63 @@
+body{
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    cursor: url(https://res.cloudinary.com/dspfsamgq/image/upload/v1579257122/5a3755ce3a48f0.7723702415135758862387_jvy9hf.png), default;
+}
+
+.table{
+    width: 90%;
+    height: 250px;
+    border-bottom: 10px solid brown;
+    display: flex;
+    justify-content: space-around;
+}
+
+.beer{
+    width: 70px;
+    height: 200px;
+    position: relative;
+    top: 35px;
+    background: url("../img/beer-bottle-png-image-5a38716fd9f523.4405012015136484958928-removebg-preview.png") center bottom/200px auto no-repeat;
+    padding: 20px 10px 0;
+    transform: scale(1);
+    transition: all .2s linear;
+}
+
+.die{
+    transform: scale(0) rotate(120deg);
+    cursor: no-drop;
+}
+
+.beer-1.die{
+    transform: scale(0) rotate(-120deg);
+}
+
+.beer-2{
+    transition: all .1s linear;
+}
+
+.beer-2.die{
+    transform: scale(0) rotate(20deg);
+}
+
+.beer-3{
+    transition: all .3s linear;
+}
+
+.beer-3.die{
+    transform: scale(0) rotate(360deg);
+}
+
+.beer-4{
+    transition: all .4s linear;
+}
+
+.beer-4.die{
+    transform: scale(0) rotate(-220deg);
+}
